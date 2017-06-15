@@ -1,0 +1,17 @@
+piVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: YOUR_NAME-nginx
+  namespace: YOUR_NAME
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: YOUR_NAME-nginx
+    spec:
+      containers:
+      - name: YOUR_NAME-nginx-server
+        image: YOUR_IMAGE_NAME
+        ports:
+        - containerPort: 80

@@ -1,0 +1,10 @@
+piVersion: v1
+kind: Service
+metadata:
+  name: YOUR_NAME-nginx
+  namespace: YOUR_NAME
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: YOUR_NAME-nginx
